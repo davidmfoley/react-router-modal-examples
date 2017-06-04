@@ -26,7 +26,7 @@ function Hello({match}) {
       </p>
 
       <p>
-        Clicking on the backdrop area will naivgate to the route specified in its parentPath property.
+        Clicking on the backdrop area will navigate to the route specified in its parentPath property.
       </p>
 
       Try <Link to='/basic/hello/world'>/basic/hello/world</Link>
