@@ -17,9 +17,9 @@ function World() {
 function Hello({match}) {
   return (
     <div className='basic__modal-content'>
-      <h4>/basic/hello</h4>
+      <h4>./hello</h4>
       <p>
-        This modal is shown for any path that starts with /basic/hello
+        This modal is shown for any path that starts with {match.url}
       </p>
       <p>
         Other modals with longer routes will appear to be stacked "on top" of this one. This is because they are rendered later in the document order.
@@ -29,7 +29,7 @@ function Hello({match}) {
         Clicking on the backdrop area will navigate to the route specified in its parentPath property.
       </p>
 
-      Try <Link to='/basic/hello/world'>/basic/hello/world</Link>
+      Try <Link to={`${match.url}/world`}>{match.url}/world</Link>
     </div>
   );
 }
@@ -48,17 +48,17 @@ export default function BasicExample({match}) {
         Depending on the route, either or both of the modals is shown.
       </p>
       <p>
-        <Link to='/basic/hello'>./hello</Link>
+        <Link to={`${match.url}/hello`}>./hello</Link>
       </p>
       <p>
-        <Link to='/basic/hello/world'>./hello/world</Link>
+        <Link to={`${match.url}/hello/world`}>./hello/world</Link>
       </p>
       <p>
-        <Link to='/basic/crazy/world'>./crazy/world</Link>
+        <Link to={`${match.url}/crazy/world`}>./crazy/world</Link>
       </p>
 
       <ModalRoute component={Hello} path={`${match.url}/hello`} parentPath='/basic' />
-      <ModalRoute component={World} exact path={`*/world`} parentPath='/basic/hello' />
+      <ModalRoute component={World} exact path={`*/world`} />
     </div>
   );
 }
