@@ -2,7 +2,9 @@
   "name": "react-router-modal-examples",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://davidmfoley.github.io/react-router-modal-examples",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
@@ -15,6 +17,7 @@
     "start": "PORT=4000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy" : "npm run build && gh-pages -d build"
   }
 }
