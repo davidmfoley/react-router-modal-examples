@@ -1,6 +1,9 @@
 ## react-router-modal-examples
 
-Setup
+http://davidmfoley.github.io/react-router-modal-examples/
+
+
+#### Setup
 
 1. Clone this repo
 1. `yarn install` or `npm `start`
