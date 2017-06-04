@@ -13,20 +13,31 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <div className="App-header">
+              <h2>react-router-modal</h2>
+              <h5>Example Usage</h5>
+            </div>
 
-              <h3>Examples</h3>
-              <div>
-                <Link to='/basic'>Basic</Link>
+            <div className="App-main">
+              <div className="App-nav">
+                <h3>Examples</h3>
+                <ul>
+                  <li>
+                    <Link to='/basic'>Basic</Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="App-content">
+                <Switch>
+                  <Route path='/basic' component={BasicExample} />
+                </Switch>
               </div>
             </div>
 
-            <Switch>
-              <Route path='/basic' component={BasicExample} />
-            </Switch>
             <ModalContainer />
           </div>
-        </BrowserRouter>
 
+        </BrowserRouter>
       </div>
     );
   }

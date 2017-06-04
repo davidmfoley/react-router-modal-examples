@@ -8,17 +8,28 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #ADF;
+  padding: 10px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.App-main {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-nav {
+  flex: 1;
+  height: calc(100vh - 70px);
+  background-color: #BED;
+}
+
+.App-nav ul li {
+  list-style-type: none;
+}
+
+.App-content {
+  flex: 3;
+  height: calc(100vh - 70px);
+  overflow: scroll;
 }
