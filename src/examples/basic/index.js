@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ModalRoute } from 'react-router-modal';
-import './basic.css';
+import './index.css';
 
 function World() {
   return (
@@ -39,7 +39,7 @@ export default function BasicExample({match}) {
     <div>
       <h5>Basic Example</h5>
       <p>
-        <a href='https://github.com/davidmfoley/react-router-modal-examples/blob/master/src/examples/basic.js'>View Source</a>
+        <a href='https://github.com/davidmfoley/react-router-modal-examples/blob/master/src/examples/basic/'>View Source</a>
       </p>
       <p>
         In this example, two ModalRoutes are defined, one that matches /hello and another that matches */world.

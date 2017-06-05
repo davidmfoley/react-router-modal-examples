@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { ModalContainer } from 'react-router-modal';
 import BasicExample from './examples/basic';
+import ChildrenExample from './examples/children';
 
 import './App.css';
 import 'react-router-modal/css/react-router-modal.css';
@@ -24,12 +25,16 @@ class App extends Component {
                   <li>
                     <Link to='/basic'>Basic</Link>
                   </li>
+                  <li>
+                    <Link to='/children'>Children</Link>
+                  </li>
                 </ul>
               </div>
 
               <div className="App-content">
                 <Switch>
                   <Route path='/basic' component={BasicExample} />
+                  <Route path='/children' component={ChildrenExample} />
                 </Switch>
               </div>
             </div>
