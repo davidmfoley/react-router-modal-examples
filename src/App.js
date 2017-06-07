@@ -10,6 +10,7 @@ import 'react-router-modal/css/react-router-modal.css';
 
 class App extends Component {
   render() {
+    const url = `/react-router-modal-examples`;
     return (
       <div>
         <BrowserRouter>
@@ -24,22 +25,22 @@ class App extends Component {
                 <h3>Examples</h3>
                 <ul>
                   <li>
-                    <Link to='/basic'>Basic</Link>
+                    <Link to={`${url}/basic`}>Basic</Link>
                   </li>
                   <li>
-                    <Link to='/children'>Children</Link>
+                    <Link to={`${url}/children`}>Children</Link>
                   </li>
                   <li>
-                    <Link to='/modal_link'>ModalLink</Link>
+                    <Link to={`${url}/modal_link`}>ModalLink</Link>
                   </li>
                 </ul>
               </div>
 
               <div className="App-content">
                 <Switch>
-                  <Route path='/basic' component={BasicExample} />
-                  <Route path='/children' component={ChildrenExample} />
-                  <Route path='/modal_link' component={ModalLinkExample} />
+                  <Route path={`${url}/basic`} component={BasicExample} />
+                  <Route path={`${url}/children`} component={ChildrenExample} />
+                  <Route path={`${url}/modal_link`} component={ModalLinkExample} />
                 </Switch>
               </div>
             </div>
