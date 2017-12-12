@@ -17,7 +17,7 @@ const Example = ({match}) => {
       <h5>Using match.params</h5>
 
       <p>
-        <a href='https://github.com/davidmfoley/react-router-modal-examples/blob/master/src/examples/parent_path/index.js'>View Source</a>
+        <a href='https://github.com/davidmfoley/react-router-modal-examples/blob/master/src/examples/match_params/index.js'>View Source</a>
       </p>
 
 
