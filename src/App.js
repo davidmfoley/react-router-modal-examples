@@ -4,6 +4,9 @@ import { ModalContainer } from 'react-router-modal';
 import BasicExample from './examples/basic';
 import ChildrenExample from './examples/children';
 import ModalLinkExample from './examples/modal_link';
+import MatchParamsExample from './examples/match_params';
+import Home from './home';
+import NotFound from './not_found';
 
 import './App.css';
 import 'react-router-modal/css/react-router-modal.css';
@@ -33,6 +36,9 @@ class App extends Component {
                   <li>
                     <Link to={`${url}/modal_link`}>ModalLink</Link>
                   </li>
+                  <li>
+                    <Link to={`${url}/match_params`}>Using match.params</Link>
+                  </li>
                 </ul>
               </div>
 
@@ -41,6 +47,9 @@ class App extends Component {
                   <Route path={`${url}/basic`} component={BasicExample} />
                   <Route path={`${url}/children`} component={ChildrenExample} />
                   <Route path={`${url}/modal_link`} component={ModalLinkExample} />
+                  <Route path={`${url}/match_params`} component={MatchParamsExample} />
+                  <Route path={url} component={Home} exact/>
+                  <Route path='*' component={NotFound} />
                 </Switch>
               </div>
             </div>
