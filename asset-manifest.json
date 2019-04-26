@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.badf83b5.css",
-  "main.css.map": "static/css/main.badf83b5.css.map",
-  "main.js": "static/js/main.7d368268.js",
-  "main.js.map": "static/js/main.7d368268.js.map"
+  "files": {
+    "main.css": "/react-router-modal-examples/static/css/main.c05b82ba.chunk.css",
+    "main.js": "/react-router-modal-examples/static/js/main.2582da13.chunk.js",
+    "main.js.map": "/react-router-modal-examples/static/js/main.2582da13.chunk.js.map",
+    "runtime~main.js": "/react-router-modal-examples/static/js/runtime~main.6b315aca.js",
+    "runtime~main.js.map": "/react-router-modal-examples/static/js/runtime~main.6b315aca.js.map",
+    "static/js/2.8465c8c4.chunk.js": "/react-router-modal-examples/static/js/2.8465c8c4.chunk.js",
+    "static/js/2.8465c8c4.chunk.js.map": "/react-router-modal-examples/static/js/2.8465c8c4.chunk.js.map",
+    "index.html": "/react-router-modal-examples/index.html",
+    "precache-manifest.e2071c23551ade0299445fd5804e0e15.js": "/react-router-modal-examples/precache-manifest.e2071c23551ade0299445fd5804e0e15.js",
+    "service-worker.js": "/react-router-modal-examples/service-worker.js",
+    "static/css/main.c05b82ba.chunk.css.map": "/react-router-modal-examples/static/css/main.c05b82ba.chunk.css.map"
+  }
 }
